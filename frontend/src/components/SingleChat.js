@@ -11,8 +11,8 @@ import { useState } from 'react';
 import {useToast,Spinner,FormControl,Input} from "@chakra-ui/react";
 import "./styles.css";
 import ScrollableChat from './ScrollableChat';
-import io from "socket.io-client";
 import animationData from "../animations/typing.json";
+import io from "socket.io-client";
 
 const ENDPOINT="https://talk-a-tive-rpxh.onrender.com/";
 var socket,selectedChatCompare;
