@@ -113,8 +113,8 @@ const Login = () => {
         colorScheme="red"
         width="100%"
         onClick={() => {
-          setEmail("guest@example.com");
-          setPassword("123456");
+          setEmail("jane@gmail.com");
+          setPassword("jane@2004");
         }}
       >
         Get Guest User Credentials
