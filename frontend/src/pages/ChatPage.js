@@ -5,11 +5,13 @@ import SideDrawer from '../components/miscellaneous/SideDrawer';
 import ChatBox from "../components/ChatBox";
 import MyChats from "../components/MyChats";
 import { useState } from 'react';
+// import { useNavigate } from "react-router-dom";
 
 const  ChatPage=() =>{
 
   const {user}= ChatState(); //getting the user details
   const [fetchAgain, setFetchAgain] = useState(false);
+  // const navigate=useNavigate();
   
   return (
     <div style={{width:"100%"}}>
