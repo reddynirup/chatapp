@@ -7,7 +7,10 @@ import {
   TabPanels,
   Tabs,
   Text,
+  Image,
+  Flex
 } from "@chakra-ui/react";
+import IMG from './icon.png'
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Login from "../components/Authentication/Login";
@@ -24,20 +27,24 @@ const Homepage=()=> {
 
   return (
     <Container maxW="xl" centerContent>
-      <Box
-        display="flex"
+      <Flex 
         justifyContent="center"
-        padding={3}
-        backgroundColor="white"
-        width="100%"
-        margin="40px 0 15px 0"
+        p={2}
+        bg="white"
+        w="100%"
+        m="40px 0 15px 0"
         borderRadius="lg"
         borderWidth="1px"
       >
-        <Text fontSize="4xl" fontFamily="Work sans">
-          Talk-A-Tive
-        </Text>
-      </Box>
+        <Box display="flex" alignItems="center">
+          <Image sizes="xl" src={IMG} alt='Dan Abramov' />
+        </Box>
+        <Box display="flex" alignItems="center">
+          <Text fontSize="4xl" fontFamily="Work sans" align="center">
+            Talk-A-Tive
+          </Text>
+        </Box>
+      </Flex>
       <Box background="white" width="100%" p={4} borderRadius="lg" borderWidth="1px">
         <Tabs isFitted variant="soft-rounded">
           <TabList mb="1em">

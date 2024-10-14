@@ -49,7 +49,7 @@ const MyChats=({fetchAgain})=> {
 
   return (
     <Box
-      display={{ base: selectedChat ? "none" : "flex", md: "flex" }}
+      display={{ base:selectedChat ? "none" : "flex", md: "flex" }}
       flexDirection="column"
       alignItems="center"
       padding={3}
