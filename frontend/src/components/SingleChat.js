@@ -225,17 +225,17 @@ const SingleChat=({fetchAgain,setFetchAgain})=> {
                             <ScrollableChat messages={messages} />
                         </div>
                     )}
+                    <FormControl onKeyDown={sendMessage} isRequired marginTop={3}>
+                        {istyping ? <div>
+                            <Lottie 
+                            options={defaultOptions}
+                            width={70}
+                            style={{marginBottom:15,marginLeft:0}}
+                            />
+                        </div>:<></> }
+                        <Input variant="filled" background="#E0E0E0" placeholder='Enter a message...' onChange={typingHandler} value={newMessage}/>
+                    </FormControl>
                 </Box>
-                <FormControl onKeyDown={sendMessage} isRequired marginTop={3}>
-                    {istyping ? <div>
-                        <Lottie 
-                          options={defaultOptions}
-                          width={70}
-                          style={{marginBottom:15,marginLeft:0}}
-                        />
-                    </div>:<></> }
-                    <Input variant="filled" background="#E0E0E0" placeholder='Enter a message...' onChange={typingHandler} value={newMessage}/>
-                </FormControl>
             </>
         ):(
             <Box display="flex" alignItems="center" justifyContent="center" height="100%">
