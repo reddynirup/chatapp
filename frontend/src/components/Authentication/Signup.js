@@ -59,8 +59,9 @@ const Signup = () => {
           'Content-Type': 'application/json',
         }
       };
-      const { data } = await fetch("/api/user",options);
-      // console.log(data);
+      const response= await fetch("/api/user",options);
+      const data = await response.json();
+
       toast({
         title: "Registration Successful",
         status: "success",
