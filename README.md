@@ -19,8 +19,8 @@ Talk-A-Tive is a real-time chat application built with React JS and Socket.io fo
    ```bash
    git clone <repository-url>
    cd chatapp
+Or download the repository as a ZIP file and extract it.
 
-   Or download the repository as a ZIP file and extract it.
 2. Set Up Environment Variables:
    Create a .env file in the root directory and add the following variables with your own values:
    ```bash
