@@ -12,6 +12,30 @@ Talk-A-Tive is a real-time chat application built with React JS and Socket.io fo
 
 [Click here to visit the live website](https://talk-a-tive-rpxh.onrender.com/)
 
+
+## Getting Started
+
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository-url>
+   cd chatapp
+
+Or download the repository as a ZIP file and extract it.
+
+<!--how to use this project 
+first clone the repo or download as a zip 
+then moview to the folder chatapp and then follow below steps
+to run the backend server run the below commands in the command prompt 
+npm install and then npm start
+open another terminal to run frontned and then type cd /frontend 
+then type below commands npm install and then npm start 
+
+make sure you create a .env file which consists of the following environment varibles of you own 
+PORT=5000
+MONGO_URI={mongodb-database url}
+JWT_SECRET={give some secrect key of your chioce }
+NODE_ENV=  -->
+
 <!-- ## Features
 
 - **User Authentication:** Secure login and signup functionality for users.
